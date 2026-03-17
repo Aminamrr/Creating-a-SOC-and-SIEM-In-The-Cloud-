@@ -35,24 +35,25 @@ Created an Azure tenant and resource group to centrally manage cloud resources a
 <img src="https://i.imgur.com/j4jd1Ws.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configured a Virtual Network (VNet) and subnet to establish the internal network architecture:  <br/>
+<img src="https://i.imgur.com/1YUFqlV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Deployed a Windows virtual machine to act as the target system (honeypot) for capturing malicious activity: <br/>
+<img src="https://i.imgur.com/TKVNxs0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Configured Network Security Groups (NSG) and disabled local firewall protections to allow unrestricted inbound traffic, intentionally exposing the system to the public internet to attract brute-force attacks:  <br/>
+<img src="https://i.imgur.com/LUObGKo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Created a Log Analytics Workspace and configured the Azure Monitoring Agent to forward Windows security event logs from the VM:  <br/>
+<img src="https://i.imgur.com/c6cNrut.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
+ <img src="https://i.imgur.com/KGVvT8B.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Deployed Microsoft Sentinel and connected it to the Log Analytics Workspace to enable centralized log analysis and threat detection:  <br/>
+<img src="https://i.imgur.com/h27PnpZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Observe the wiped disk:  <br/>
