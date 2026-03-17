@@ -56,6 +56,14 @@ Deployed Microsoft Sentinel and connected it to the Log Analytics Workspace to e
 <img src="https://i.imgur.com/h27PnpZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+ Imported a watchlist containing IP geolocation data and correlated attacker IP addresses with geographic information:  <br/>
+<img src="https://i.imgur.com/vOWwtmN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+ Used Kusto Query Language (KQL) to query Event ID 4625 logs and identify failed RDP login attempts, indicating potential brute-force attacks. This query filters Windows Security Events for failed logon attempts (Event ID 4625) and enriches the data by correlating attacker IP addresses with a geolocation watchlist. Using the ipv4_lookup function, it maps IP addresses to geographic data, enabling identification and visualization of attack origins for threat analysis:  <br/>
+<img src="https://i.imgur.com/LkOwIQd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
 Observe the wiped disk:  <br/>
 <img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
