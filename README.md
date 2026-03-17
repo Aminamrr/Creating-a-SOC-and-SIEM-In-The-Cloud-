@@ -64,8 +64,8 @@ Deployed Microsoft Sentinel and connected it to the Log Analytics Workspace to e
 <img src="https://i.imgur.com/LkOwIQd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Built a Sentinel workbook to visualize geolocated failed login attempts, providing a global view of attack activity. This enabled identification of attack trends, clustering of malicious IP addresses, and insight into the geographic origin of brute-force attempts targeting the exposed virtual machine:  <br/>
+<img src="https://i.imgur.com/STOXMpD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <!--
